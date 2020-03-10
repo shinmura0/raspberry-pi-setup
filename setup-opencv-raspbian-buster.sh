@@ -17,7 +17,18 @@ install_opencv(){
 	sudo pip3 --default-timeout=1000 install opencv-python==3.4.6.27
 }
 
-
+# install Open CV
+install_others(){
+	sudo apt-get install qt5-default pyqt5-dev pyqt5-dev-tools
+	sudo pip3 install pyqtgraph
+	sudo pip3 install datetime
+	sudo pip3 install numpy==1.15.4
+	sudo apt-get install python3-matplotlib
+	sudo apt-get install python3-pyaudio
+	sudo apt-get install python3-pyqt5
+	sudo apt-get install python3-scipy
+	sudo pip3 install scikit-learn==0.19.0
+}
 
 START_TIME=`date +%s`
 
@@ -26,7 +37,7 @@ cd `dirname $0`
 
 apt_get_install
 install_opencv
-
+install_others
 
 END_TIME=`date +%s`
 
