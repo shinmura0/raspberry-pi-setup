@@ -12,12 +12,17 @@ apt_get_install(){
 	sudo apt-get install -y libjasper-dev
 }
 
+# install keras
+install_keras(){
+	sudo pip3 install keras==2.2.4
+}
+
 # install Open CV
 install_opencv(){
 	sudo pip3 --default-timeout=1000 install opencv-python==3.4.6.27
 }
 
-# install Open CV
+# install others
 install_others(){
 	sudo apt-get install qt5-default pyqt5-dev pyqt5-dev-tools
 	sudo pip3 install pyqtgraph
@@ -36,6 +41,7 @@ START_TIME=`date +%s`
 cd `dirname $0`
 
 apt_get_install
+install_keras
 install_opencv
 install_others
 
