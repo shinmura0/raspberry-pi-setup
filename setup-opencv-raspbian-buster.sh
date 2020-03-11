@@ -15,6 +15,7 @@ apt_get_install(){
 # install keras
 install_keras(){
 	sudo pip3 install keras==2.2.4
+	sudo pip3 install tensorflow==1.13.1
 }
 
 # install Open CV
