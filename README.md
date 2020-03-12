@@ -9,7 +9,6 @@ $ sudo apt-get -y install git
 
 # Run script
 ```sh
-$ cd
 $ git clone https://github.com/shinmura0/raspberry-pi-setup
 $ cd raspberry-pi-setup
 $ ./setup-opencv-raspbian-buster.sh
