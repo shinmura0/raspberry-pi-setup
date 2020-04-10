@@ -25,6 +25,7 @@ install_keras(){
 # install Open CV
 install_opencv(){
 	sudo pip3 --default-timeout=1000 install opencv-python==3.4.6.27
+	sudo pip3 --default-timeout=1000 install opencv-contrib-python==3.4.6.27
 }
 
 # install others
